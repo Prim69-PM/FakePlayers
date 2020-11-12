@@ -1,0 +1,11 @@
+name: FakePlayers
+version: 1.0.0
+author: xPrim69x
+description: A plugin made to spawn fake players by xPrim69x!
+website: https://www.github.com/Prim69
+main: xPrim69x\FakePlayers\Main
+api: 3.0.0
+permissions:
+  fakeplayer.spawn:
+    description: Permission to spawn a fake player and use the /fp command.
+    default: op
