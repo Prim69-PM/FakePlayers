@@ -6,6 +6,7 @@ use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\entity\Entity;
 use pocketmine\item\Item;
+use pocketmine\item\ItemIds;
 use pocketmine\Player;
 use pocketmine\utils\TextFormat as TF;
 
@@ -51,7 +52,12 @@ class FakePlayerCommand extends Command {
 	}
 
 	public function giveArmor(FakePlayer $fp){
-		$fp->getArmorInventory()->setContents([Item::get(310), Item::get(311), Item::get(312), Item::get(313)]);
+		$fp->getArmorInventory()->setContents([
+			Item::get(ItemIds::DIAMOND_BOOTS),
+			Item::get(ItemIds::DIAMOND_CHESTPLATE),
+			Item::get(ItemIds::DIAMOND_LEGGINGS),
+			Item::get(ItemIds::DIAMOND_BOOTS)
+		]);
 	}
 
 }
