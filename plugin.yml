@@ -6,6 +6,6 @@ website: https://www.github.com/Prim69
 main: xPrim69x\FakePlayers\Main
 api: 3.0.0
 permissions:
-  fakeplayer.spawn:
+  fakeplayers.spawn:
     description: Permission to spawn a fake player and use the /fp command.
     default: op
