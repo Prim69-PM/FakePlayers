@@ -23,7 +23,7 @@ class FakePlayerCommand extends Command {
 
 	public function execute(CommandSender $player, string $commandLabel, array $args){
 		if(!$player instanceof Player) return false;
-		if(!$player->hasPermission('fakeplayer.spawn')){
+		if(!$player->hasPermission('fakeplayers.spawn')){
 			$player->sendMessage(TF::DARK_RED . 'You do not have permission to use this command!');
 			return false;
 		}
