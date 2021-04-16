@@ -53,7 +53,7 @@ class FakePlayerCommand extends Command {
 
 	public function giveArmor(FakePlayer $fp){
 		$fp->getArmorInventory()->setContents([
-			Item::get(ItemIds::DIAMOND_BOOTS),
+			Item::get(ItemIds::DIAMOND_HELMET),
 			Item::get(ItemIds::DIAMOND_CHESTPLATE),
 			Item::get(ItemIds::DIAMOND_LEGGINGS),
 			Item::get(ItemIds::DIAMOND_BOOTS)
